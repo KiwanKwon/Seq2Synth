@@ -1,0 +1,114 @@
+{
+  "supported_datasets": [
+    "cmapss",
+    "freddiemac",
+    "fanniemae",
+    "rossmann_subsampled",
+    "walmart_subsampled",
+    "fanniemae_subsampled",
+    "hnm_subsampled",
+    "ptbxl_subsampled",
+    "berka",
+    "airbnb",
+    "citi_bike",
+    "rossmann_tabdit"
+  ],
+  "datasets": {
+    "cmapss": {
+      "flow_builder": "cmapss",
+      "entity_col": "unit_nr",
+      "time_col": "time_cycles",
+      "label_col": "final_s11_high_regime",
+      "value_cols": ["setting_2", "setting_3", "s_1", "s_2", "s_3", "s_4", "s_5", "s_6", "s_7", "s_8", "s_9", "s_10", "s_11", "s_12", "s_13", "s_14", "s_15", "s_16", "s_17", "s_18", "s_19", "s_20", "s_21"],
+      "metadata": {"flow_source": "cmapss", "label_source_col": "s_11", "label_source_type": "final_value_median_split"}
+    },
+    "freddiemac": {
+      "flow_builder": "freddiemac",
+      "entity_col": "LOAN SEQUENCE NUMBER",
+      "time_col": "MONTHLY REPORTING PERIOD",
+      "label_col": "property_type_is_4",
+      "value_cols": ["CURRENT ACTUAL UPB", "CURRENT LOAN DELINQUENCY STATUS", "LOAN AGE", "REMAINING MONTHS TO LEGAL MATURITY", "CURRENT INTEREST RATE", "CURRENT NON-INTEREST BEARING UPB", "ESTIMATED LOAN TO VALUE (ELTV)", "INTEREST BEARING UPB"],
+      "metadata": {"flow_source": "hist", "label_source_col": "PROPERTY TYPE", "label_source_type": "categorical_equals_4"}
+    },
+    "rossmann_subsampled": {
+      "flow_builder": "rossmann_subsampled",
+      "entity_col": "Store",
+      "time_col": "Date",
+      "label_col": "Promo2",
+      "value_cols": ["DayOfWeek", "Customers", "Open", "Promo", "StateHoliday", "SchoolHoliday"],
+      "metadata": {"flow_source": "historical", "label_source_col": "Promo2", "label_source_type": "existing_binary_column"}
+    },
+    "walmart_subsampled": {
+      "flow_builder": "walmart_subsampled",
+      "entity_col": "Store",
+      "time_col": "Date",
+      "label_col": "store_type_is_A",
+      "value_cols": ["Temperature", "Fuel_Price", "MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4", "MarkDown5", "CPI", "Unemployment", "IsHoliday", "dept_weekly_sales_sum", "dept_weekly_sales_mean", "dept_weekly_sales_std", "dept_count"],
+      "metadata": {"flow_source": "features_plus_depts_agg", "label_source_col": "Type", "label_source_type": "categorical_equals_A"}
+    },
+    "fanniemae_subsampled": {
+      "flow_builder": "fanniemae_subsampled",
+      "entity_col": "Loan Identifier",
+      "time_col": "Monthly Reporting Period",
+      "label_col": "property_type_is_4",
+      "value_cols": ["Channel", "Seller Name", "Servicer Name", "Original UPB", "Current Actual UPB", "Original Loan Term", "Loan Age", "Remaining Months to Legal Maturity", "Remaining Months To Maturity", "Original Loan to Value Ratio (LTV)", "Original Combined Loan to Value Ratio (CLTV)", "Debt-To-Income (DTI)", "Loan Purpose", "Occupancy Status", "Current Loan Delinquency Status", "Total Principal Current", "Special Eligibility Program", "Borrower Assistance Plan", "Alternative Delinquency Resolution"],
+      "metadata": {"flow_source": "child", "label_source_col": "Property Type", "label_source_type": "categorical_equals_4"}
+    },
+    "fanniemae": {
+      "flow_builder": "fanniemae",
+      "entity_col": "Loan Identifier",
+      "time_col": "Monthly Reporting Period",
+      "label_col": "property_type_is_4",
+      "value_cols": ["Channel", "Seller Name", "Servicer Name", "Original UPB", "Current Actual UPB", "Original Loan Term", "Loan Age", "Remaining Months to Legal Maturity", "Remaining Months To Maturity", "Original Loan to Value Ratio (LTV)", "Original Combined Loan to Value Ratio (CLTV)", "Debt-To-Income (DTI)", "Loan Purpose", "Occupancy Status", "Current Loan Delinquency Status", "Total Principal Current", "Special Eligibility Program", "Borrower Assistance Plan", "Alternative Delinquency Resolution"],
+      "metadata": {"flow_source": "child", "label_source_col": "Property Type", "label_source_type": "categorical_equals_4"}
+    },
+    "hnm_subsampled": {
+      "flow_builder": "hnm_subsampled",
+      "entity_col": "customer_id",
+      "time_col": "t_dat",
+      "label_col": "fashion_news_regularly",
+      "value_cols": ["price", "sales_channel_id"],
+      "metadata": {"flow_source": "transactions_train", "label_source_col": "fashion_news_frequency", "label_source_type": "categorical_equals_regularly"}
+    },
+    "ptbxl_subsampled": {
+      "flow_builder": "ptbxl_subsampled",
+      "entity_col": "ecg_id",
+      "time_col": "timestamp",
+      "label_col": "sex",
+      "value_cols": ["lead_0", "lead_1", "lead_2", "lead_3", "lead_4", "lead_5", "lead_6", "lead_7", "lead_8", "lead_9", "lead_10", "lead_11"],
+      "metadata": {"flow_source": "records", "label_source_col": "sex", "label_source_type": "existing_binary_column"}
+    },
+    "berka": {
+      "flow_builder": "berka",
+      "entity_col": "user",
+      "time_col": "__date__",
+      "label_col": "region_is_moravia",
+      "value_cols": ["amount_trans", "balance", "type_trans", "operation", "k_symbol"],
+      "metadata": {"flow_source": "child", "label_source_col": "region", "label_source_type": "categorical_in_moravia_group"}
+    },
+    "airbnb": {
+      "flow_builder": "airbnb",
+      "entity_col": "user",
+      "time_col": "event_idx",
+      "label_col": "n_sessions_ge_17",
+      "value_cols": ["action_type", "device_type", "action_detail", "action", "secs_elapsed"],
+      "metadata": {"flow_source": "child", "label_source_col": "n_sessions", "label_source_type": "threshold_ge_17"}
+    },
+    "citi_bike": {
+      "flow_builder": "citi_bike",
+      "entity_col": "bikeid",
+      "time_col": "starttime",
+      "label_col": "mode_gender_is_1",
+      "value_cols": ["tripduration", "start station latitude", "start station longitude", "end station latitude", "end station longitude", "birth year", "usertype", "gender"],
+      "metadata": {"flow_source": "citi_bike", "label_source_col": "gender", "label_source_type": "bike_mode_gender_equals_1"}
+    },
+    "rossmann_tabdit": {
+      "flow_builder": "rossmann_tabdit",
+      "entity_col": "user",
+      "time_col": "__date__",
+      "label_col": "Promo2",
+      "value_cols": ["Open", "Promo", "StateHoliday", "SchoolHoliday", "DayOfWeek", "Date_month", "Date_day", "Customers", "Sales"],
+      "metadata": {"flow_source": "historical", "label_source_col": "Promo2", "label_source_type": "existing_binary_column"}
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "supported_datasets": ["cmapss_combined", "freddiemac", "rossmann_subsampled", "walmart_subsampled"],
+  "datasets": {
+    "cmapss_combined": {
+      "flow_builder": "cmapss_combined",
+      "entity_col": "unit_nr",
+      "time_col": "time_cycles",
+      "continuous_cols": ["setting_1", "setting_2", "setting_3", "s_1", "s_2", "s_3", "s_4", "s_5", "s_6", "s_7", "s_8", "s_9", "s_10", "s_11", "s_12", "s_13", "s_14", "s_15", "s_16", "s_17", "s_18", "s_19", "s_20", "s_21"],
+      "categorical_cols": [],
+      "metadata": {"flow_source": "cmapss"}
+    },
+    "freddiemac": {
+      "flow_builder": "freddiemac",
+      "entity_col": "LOAN SEQUENCE NUMBER",
+      "time_col": "MONTHLY REPORTING PERIOD",
+      "continuous_cols": ["CURRENT ACTUAL UPB", "LOAN AGE", "REMAINING MONTHS TO LEGAL MATURITY", "CURRENT INTEREST RATE", "CURRENT NON-INTEREST BEARING UPB", "ESTIMATED LOAN TO VALUE (ELTV)", "INTEREST BEARING UPB"],
+      "categorical_cols": ["CURRENT LOAN DELINQUENCY STATUS"],
+      "metadata": {"flow_source": "hist"}
+    },
+    "rossmann_subsampled": {
+      "flow_builder": "rossmann_subsampled",
+      "entity_col": "Store",
+      "time_col": "Date",
+      "continuous_cols": ["Customers"],
+      "categorical_cols": ["DayOfWeek", "Open", "Promo", "StateHoliday", "SchoolHoliday"],
+      "metadata": {"flow_source": "historical"}
+    },
+    "walmart_subsampled": {
+      "flow_builder": "walmart_subsampled",
+      "entity_col": "Store",
+      "time_col": "Date",
+      "continuous_cols": ["Temperature", "Fuel_Price", "MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4", "MarkDown5", "CPI", "Unemployment", "dept_weekly_sales_sum", "dept_weekly_sales_mean", "dept_weekly_sales_std", "dept_count"],
+      "categorical_cols": ["IsHoliday"],
+      "metadata": {"flow_source": "features_plus_depts_agg"}
+    }
+  }
+}
