@@ -1,0 +1,17 @@
+{
+  "total_rows_before": 100000,
+  "total_rows_after": 98537,
+  "rows_removed": 36722,
+  "imputed_rows": 35259,
+  "imputation_ratio": 0.357825,
+  "flows_before": 1000,
+  "flows_after": 1000,
+  "real_flows": 1000,
+  "avg_flow_length_before": 100.0,
+  "avg_flow_length_after": 98.537,
+  "dataset": "ptbxl",
+  "method": "id_fill",
+  "real_file": "real/ptbxl/records.csv",
+  "synth_file": "synthetic/ptbxl/CLAVADDPM/records.csv",
+  "output_file": "synthetic/ptbxl/CLAVADDPM/records_postprocessed_id_fill.csv"
+}

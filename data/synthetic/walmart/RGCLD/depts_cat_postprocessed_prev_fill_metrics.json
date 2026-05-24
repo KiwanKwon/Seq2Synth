@@ -1,0 +1,25 @@
+{
+  "total_rows_before": 14977,
+  "total_rows_after": 14977,
+  "rows_removed": 0,
+  "imputed_rows": 0,
+  "imputation_ratio": 0.0,
+  "flows_before": 45,
+  "flows_after": 45,
+  "real_flows": 45,
+  "avg_flow_length_before": 332.8222,
+  "avg_flow_length_after": 332.8222,
+  "dataset": "walmart",
+  "method": "prev_fill",
+  "imputation_scope": "categorical_only",
+  "numeric_columns_left_unfilled": [
+    "Weekly_Sales"
+  ],
+  "categorical_columns_filled": [
+    "Dept",
+    "IsHoliday"
+  ],
+  "real_file": "real/walmart/depts.csv",
+  "synth_file": "synthetic/walmart/RGCLD/depts.csv",
+  "output_file": "synthetic/walmart/RGCLD/depts_cat_postprocessed_prev_fill.csv"
+}

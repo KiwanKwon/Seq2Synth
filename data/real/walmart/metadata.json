@@ -1,0 +1,114 @@
+{
+    "METADATA_SPEC_VERSION": "MULTI_TABLE_V1",
+    "relationships": [
+        {
+            "child_foreign_key": "Store",
+            "child_table_name": "features",
+            "parent_primary_key": "Store",
+            "parent_table_name": "stores"
+        },
+        {
+            "child_foreign_key": "Store",
+            "child_table_name": "depts",
+            "parent_primary_key": "Store",
+            "parent_table_name": "stores"
+        }
+    ],
+    "tables": {
+        "depts": {
+            "columns": {
+                "Date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "Dept": {
+                    "sdtype": "categorical"
+                },
+                "IsHoliday": {
+                    "sdtype": "categorical"
+                },
+                "Store": {
+                    "sdtype": "id"
+                },
+                "Weekly_Sales": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                }
+            }
+        },
+        "features": {
+            "columns": {
+                "CPI": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "Date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "Fuel_Price": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "IsHoliday": {
+                    "sdtype": "categorical"
+                },
+                "MarkDown1": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "MarkDown2": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "MarkDown3": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "MarkDown4": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "MarkDown5": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "Store": {
+                    "sdtype": "id"
+                },
+                "Temperature": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                },
+                "Unemployment": {
+                    "computer_representation": "Float",
+                    "sdtype": "numerical"
+                }
+            }
+        },
+        "stores": {
+            "columns": {
+                "Size": {
+                    "computer_representation": "Int64",
+                    "sdtype": "numerical"
+                },
+                "Store": {
+                    "sdtype": "id"
+                },
+                "Type": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "Store"
+        }
+    },
+    "timestamp_fidelity": [
+        {
+            "table": "features",
+            "key_col": "Store",
+            "time_col": "Date",
+            "periodicity": "Regular",
+            "time_repr": "Absolute"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "total_rows_before": 225,
+  "total_rows_after": 280,
+  "rows_removed": 0,
+  "imputed_rows": 55,
+  "imputation_ratio": 0.196429,
+  "flows_before": 45,
+  "flows_after": 45,
+  "real_flows": 45,
+  "avg_flow_length_before": 5.0,
+  "avg_flow_length_after": 6.2222,
+  "dataset": "walmart",
+  "method": "interp_fill",
+  "real_file": "real/walmart/features.csv",
+  "synth_file": "synthetic/walmart/RGCLD/features.csv",
+  "output_file": "synthetic/walmart/RGCLD/features_postprocessed_interp_fill.csv"
+}

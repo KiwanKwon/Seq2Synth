@@ -1,0 +1,32 @@
+{
+  "total_rows_before": 225,
+  "total_rows_after": 287,
+  "rows_removed": 0,
+  "imputed_rows": 62,
+  "imputation_ratio": 0.216028,
+  "flows_before": 45,
+  "flows_after": 45,
+  "real_flows": 45,
+  "avg_flow_length_before": 5.0,
+  "avg_flow_length_after": 6.3778,
+  "dataset": "walmart",
+  "method": "interp_fill",
+  "imputation_scope": "categorical_only",
+  "numeric_columns_left_unfilled": [
+    "CPI",
+    "Fuel_Price",
+    "MarkDown1",
+    "MarkDown2",
+    "MarkDown3",
+    "MarkDown4",
+    "MarkDown5",
+    "Temperature",
+    "Unemployment"
+  ],
+  "categorical_columns_filled": [
+    "IsHoliday"
+  ],
+  "real_file": "real/walmart/features.csv",
+  "synth_file": "synthetic/walmart/SDV/features.csv",
+  "output_file": "synthetic/walmart/SDV/features_cat_postprocessed_interp_fill.csv"
+}

@@ -1,0 +1,90 @@
+{
+  "tables": {
+    "stores": {
+      "fields": {
+        "Type": {
+          "type": "categorical"
+        },
+        "Size": {
+          "type": "numerical"
+        },
+        "Store": {
+          "type": "id",
+          "subtype": "string"
+        }
+      },
+      "primary_key": "Store"
+    },
+    "features": {
+      "fields": {
+        "Date": {
+          "type": "datetime",
+          "format": "%Y-%m-%d"
+        },
+        "MarkDown1": {
+          "type": "numerical"
+        },
+        "Store": {
+          "type": "id",
+          "ref": {
+            "table": "stores",
+            "field": "Store"
+          },
+          "subtype": "string"
+        },
+        "IsHoliday": {
+          "type": "categorical"
+        },
+        "MarkDown4": {
+          "type": "numerical"
+        },
+        "MarkDown3": {
+          "type": "numerical"
+        },
+        "Fuel_Price": {
+          "type": "numerical"
+        },
+        "Unemployment": {
+          "type": "numerical"
+        },
+        "Temperature": {
+          "type": "numerical"
+        },
+        "MarkDown5": {
+          "type": "numerical"
+        },
+        "MarkDown2": {
+          "type": "numerical"
+        },
+        "CPI": {
+          "type": "numerical"
+        }
+      }
+    },
+    "depts": {
+      "fields": {
+        "Date": {
+          "type": "datetime",
+          "format": "%Y-%m-%d"
+        },
+        "Weekly_Sales": {
+          "type": "numerical"
+        },
+        "Store": {
+          "type": "id",
+          "ref": {
+            "table": "stores",
+            "field": "Store"
+          },
+          "subtype": "string"
+        },
+        "Dept": {
+          "type": "categorical"
+        },
+        "IsHoliday": {
+          "type": "categorical"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "total_rows_before": 100000,
+  "total_rows_after": 93067,
+  "rows_removed": 43480,
+  "imputed_rows": 36547,
+  "imputation_ratio": 0.392696,
+  "flows_before": 1000,
+  "flows_after": 1000,
+  "real_flows": 1000,
+  "avg_flow_length_before": 100.0,
+  "avg_flow_length_after": 93.067,
+  "dataset": "ptbxl",
+  "method": "id_fill",
+  "imputation_scope": "categorical_only",
+  "numeric_columns_left_unfilled": [
+    "lead_0",
+    "lead_1",
+    "lead_2",
+    "lead_3",
+    "lead_4",
+    "lead_5",
+    "lead_6",
+    "lead_7",
+    "lead_8",
+    "lead_9",
+    "lead_10",
+    "lead_11"
+  ],
+  "categorical_columns_filled": [
+    "diagnostic_superclass"
+  ],
+  "real_file": "real/ptbxl/records.csv",
+  "synth_file": "synthetic/ptbxl/RGCLD/records.csv",
+  "output_file": "synthetic/ptbxl/RGCLD/records_cat_postprocessed_id_fill.csv"
+}

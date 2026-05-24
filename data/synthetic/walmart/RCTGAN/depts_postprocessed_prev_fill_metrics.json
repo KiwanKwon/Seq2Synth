@@ -1,0 +1,17 @@
+{
+  "total_rows_before": 14250,
+  "total_rows_after": 14212,
+  "rows_removed": 38,
+  "imputed_rows": 0,
+  "imputation_ratio": 0.0,
+  "flows_before": 45,
+  "flows_after": 45,
+  "real_flows": 45,
+  "avg_flow_length_before": 316.6667,
+  "avg_flow_length_after": 315.8222,
+  "dataset": "walmart",
+  "method": "prev_fill",
+  "real_file": "real/walmart/depts.csv",
+  "synth_file": "synthetic/walmart/RCTGAN/depts.csv",
+  "output_file": "synthetic/walmart/RCTGAN/depts_postprocessed_prev_fill.csv"
+}

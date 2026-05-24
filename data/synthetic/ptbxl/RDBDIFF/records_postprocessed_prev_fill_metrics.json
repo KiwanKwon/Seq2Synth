@@ -1,0 +1,17 @@
+{
+  "total_rows_before": 100000,
+  "total_rows_after": 98074,
+  "rows_removed": 37777,
+  "imputed_rows": 35851,
+  "imputation_ratio": 0.365551,
+  "flows_before": 1000,
+  "flows_after": 1000,
+  "real_flows": 1000,
+  "avg_flow_length_before": 100.0,
+  "avg_flow_length_after": 98.074,
+  "dataset": "ptbxl",
+  "method": "prev_fill",
+  "real_file": "real/ptbxl/records.csv",
+  "synth_file": "synthetic/ptbxl/RDBDIFF/records.csv",
+  "output_file": "synthetic/ptbxl/RDBDIFF/records_postprocessed_prev_fill.csv"
+}
