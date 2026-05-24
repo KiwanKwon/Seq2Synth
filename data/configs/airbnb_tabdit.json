@@ -1,0 +1,18 @@
+{
+    "dataset": "airbnb_tabdit",
+    "data_structure": "linear",
+    "tables": {
+        "parent": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "child": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "secs_elapsed"
+        }
+    }
+}

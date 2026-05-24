@@ -13,16 +13,6 @@ Seq2Synth is a benchmark evaluation framework for assessing the quality of **seq
   <img src="figs/metrics_overview.png" alt="Metrics Overview" width="820">
 </p>
 
-### Structural (`--metrics structural`)
-
-Evaluates relational structure between parent and child tables.
-
-| Metric | Description |
-|---|---|
-| `SequenceLengthSimilarity` | Compares distribution of sequence lengths per entity |
-| `TemporalCardinalityShapeSimilarity` | Compares cardinality shapes over time |
-| `DynamicKHopCorrelationSimilarity` | K-hop neighborhood correlation similarity |
-
 ### Timestamp Fidelity (`--metrics timestamp`)
 
 Evaluates how faithfully synthetic data reproduces temporal patterns (periodicity, inter-arrival times, absolute/relative time representations). Supports both single-table and multi-table datasets with automatic metadata inference.
@@ -61,6 +51,16 @@ Time-series quality metrics that capture temporal dynamics within each entity's 
 | `TransitionMatrixTVDComplement` | Compares categorical transition matrices over time |
 | `AutoCorrelationSimilarity` | Compares autocorrelation structure for numeric features |
 | `TTWassersteinDistance` | Computes multivariate spectral Wasserstein distance over trajectories |
+
+### Structural (`--metrics structural`)
+
+Evaluates relational structure between parent and child tables.
+
+| Metric | Description |
+|---|---|
+| `SequenceLengthSimilarity` | Compares distribution of sequence lengths per entity |
+| `TemporalCardinalityShapeSimilarity` | Compares cardinality shapes over time |
+| `DynamicKHopCorrelationSimilarity` | K-hop neighborhood correlation similarity |
 
 ### Privacy (`--metrics privacy`)
 
@@ -185,8 +185,8 @@ Stage 4 → Grid imputation (regular datasets only)
 | freddiemac | *(inferred)* | timestamp | Regular | datetime (monthly) |
 | google_cluster | machine_id / job_id | time / start_time | Mixed | numeric |
 | hnm | customer_id | t_dat | Irregular | datetime |
+| home_credit | SK_ID_CURR / SK_ID_BUREAU / SK_ID_PREV | Mixed | Mixed | integer (relative) |
 | ptbxl | ecg_id | step | Regular | integer |
-| rossmann | *(inferred)* | Date | Regular | datetime (daily) |
 | rossmann_tabdit | user | Date | Regular | date_string |
 | walmart | Store | Date | Regular | datetime |
 

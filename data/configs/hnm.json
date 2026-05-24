@@ -1,0 +1,24 @@
+{
+    "dataset": "hnm",
+    "data_structure": "multi-parent",
+    "tables": {
+        "articles": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"            
+        },
+        "customers": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "transactions_train": {
+            "time_representation": "absolute",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "t_dat"
+        }
+    }
+}

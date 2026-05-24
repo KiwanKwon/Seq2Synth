@@ -1,0 +1,51 @@
+{
+    "dataset": "home_credit",
+    "time_representation": "relative",
+    "periodicity": "regular",
+    "trajectory_independence": "dependent",
+    "data_structure": "multi-child",
+    "tables": {
+        "application": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "bureau_balance": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "MONTHS_BALANCE"
+        },
+        "bureau": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "DAYS_CREDIT"
+        },
+        "credit_card_balance": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "MONTHS_BALANCE"
+        },
+        "installments_payments": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "DAYS_INSTALMENT"
+        },
+        "POS_CASH_balance": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "MONTHS_BALANCE"
+        },
+        "previous_application": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "DAYS_DECISION"
+        }
+    }
+}

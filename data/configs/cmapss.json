@@ -1,0 +1,12 @@
+{
+    "dataset": "cmapss",
+    "data_structure": "single",
+    "tables": {
+        "cmapss": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "independent",
+            "time_col": "time_cycles"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "dataset": "fanniemae",
+    "data_structure": "linear",
+    "tables": {
+        "parent": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "child": {
+            "time_representation": "absolute",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "Monthly Reporting Period"
+        }
+    }
+}

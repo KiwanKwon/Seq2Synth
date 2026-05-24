@@ -1,0 +1,18 @@
+{
+    "dataset": "freddiemac",
+    "data_structure": "linear",
+    "tables": {
+        "orig": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "hist": {
+            "time_representation": "absolute",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "MONTHLY REPORTING PERIOD"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "dataset": "coupon",
+    "time_representation": "absolute",
+    "periodicity": "irregular",
+    "trajectory_independence": "dependent",
+    "data_structure": "multi-child, multi-parent",
+    "tables": {
+        "coupon_list": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "user_list": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "coupon_area": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "coupon_detail": {
+            "time_representation": "absolute",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "I_DATE"
+        },
+        "coupon_visit":{
+            "time_representation": "absolute",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "I_DATE"
+        }
+    }
+}

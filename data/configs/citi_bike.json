@@ -1,0 +1,12 @@
+{
+    "dataset": "citi_bike",
+    "data_structure": "single",
+    "tables": {
+        "citi_bike": {
+            "time_representation": "absolute",
+            "periodicity": "irregular",
+            "trajectory_independence": "dependent",
+            "time_col": "starttime"
+        }
+    }
+}

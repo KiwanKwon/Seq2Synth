@@ -1,0 +1,18 @@
+{
+    "dataset": "rossmann_tabdit",
+    "data_structure": "linear",
+    "tables": {
+        "store": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "historical": {
+            "time_representation": "absolute",
+            "periodicity": "regular",
+            "trajectory_independence": "dependent",
+            "time_col": "Date"
+        }
+    }
+}

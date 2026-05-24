@@ -1,0 +1,21 @@
+{
+    "dataset": "ptbxl",
+    "time_representation": "relative",
+    "periodicity": "regular",
+    "trajectory_independence": "independent",
+    "data_structure": "linear",
+    "tables": {
+        "ptbxl_database": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "records": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "independent",
+            "time_col": "step"
+        }
+    }
+}

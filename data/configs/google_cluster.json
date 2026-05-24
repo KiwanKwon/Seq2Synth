@@ -1,0 +1,39 @@
+{
+    "dataset": "google_cluster",
+    "time_representation": "relative",
+    "periodicity": "both",
+    "trajectory_independence": "independent",
+    "data_structure": "multi-child",
+    "tables": {
+        "jobs": {
+            "time_representation": "None",
+            "periodicity": "None",
+            "trajectory_independence": "None",
+            "time_col": "None"
+        },
+        "job_events": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "independent",
+            "time_col": "time"           
+        },
+        "task_constraints": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "independent",
+            "time_col": "time"  
+        },
+        "task_events": {
+            "time_representation": "relative",
+            "periodicity": "irregular",
+            "trajectory_independence": "independent",
+            "time_col": "time"  
+        },
+        "task_usage": {
+            "time_representation": "relative",
+            "periodicity": "regular",
+            "trajectory_independence": "independent",
+            "time_col": "start_time"
+        }
+    }
+}
