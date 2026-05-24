@@ -1,0 +1,32 @@
+{
+  "datasets": {
+    "rossmann_subsampled": {
+      "id_col": "Store",
+      "time_col": "Date",
+      "feature_cols": ["Customers"],
+      "real_file": "historical.csv",
+      "synthetic_file": "historical.csv"
+    },
+    "walmart_subsampled": {
+      "id_col": "Store",
+      "time_col": "Date",
+      "feature_cols": ["CPI", "Fuel_Price", "MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4", "MarkDown5", "Temperature", "Unemployment"],
+      "real_file": "features.csv",
+      "synthetic_file": "features.csv"
+    },
+    "ptbxl_subsampled": {
+      "id_col": "ecg_id",
+      "time_col": "step",
+      "feature_cols": ["lead_0", "lead_1", "lead_2", "lead_3", "lead_4", "lead_5", "lead_6", "lead_7", "lead_8", "lead_9", "lead_10", "lead_11"],
+      "real_file": "records.csv",
+      "synthetic_file": "records.csv"
+    },
+    "rossmann_tabdit": {
+      "id_col": "user",
+      "time_col": "__date__",
+      "feature_cols": ["Customers", "Sales"],
+      "real_file": "historical.csv",
+      "synthetic_file": "historical.csv"
+    }
+  }
+}
